@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor1: hsl(225, 100%, 94%);
+    --cor2: hsl(245, 75%, 52%);
+    --cor3: hsl(225, 100%, 98%);
+    --cor4: hsl(224, 23%, 55%);
+    --cor5: hsl(223, 47%, 23%);
+
+    --fonte-padrao: 'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+main {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+main > div#container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: var(--cor3);
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.226);
+}
+
+div#container > img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+div#container > div#container-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+div#container-conteudo > div#container-texto {
+    text-align: center;
+}
+
+div#container-texto > h1 {
+    font-size: 26px;
+    font-weight: 900;
+    padding-bottom: 15px;
+    color: var(--cor5);
+}
+
+div#container-texto > p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cor4);
+    line-height: 25px;
+}
+
+div#container-conteudo > div#container-plano {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-block: 30px;
+}
+
+div#container-plano > img {
+    width: 40px;
+}
+
+div#container-plano > p {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--cor4);
+    margin-right: 50px;
+}
+
+div#container-plano > p > span {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--cor5);
+    padding-bottom: 5px;
+}
+
+div#container-plano > a {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor2);
+}
+
+div#container-plano > a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 60%;
+}
+
+div#container-conteudo > button {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor1);
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 10px;
+    padding-block: 12px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.219);
+}
+
+div#container-conteudo > button:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+div#container-conteudo > a {
+    text-decoration: none;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor4);
+}
+
+div#container-conteudo > a:hover {
+    cursor: pointer;
+    color: var(--cor5);
+}
+
+footer {
+    background-color: var(--cor3);
+    padding-block: 5px;
+}
+
+footer > div.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 0 auto;
+}
+
+div.attribution > a { 
+    color: black;
+}
+
+div.attribution > a:hover {
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
